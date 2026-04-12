@@ -13,7 +13,7 @@ jobs:
         lfs: true
     - name: "Determine Branch"
       id: branches
-      uses: transferwise/sanitize-branch-name@v1
+      uses: onliner/sanitize-branch-name@v1
     - name: Upload artifact to Github
       uses: actions/upload-artifact@v6
       with:

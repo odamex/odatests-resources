@@ -15,7 +15,7 @@ jobs:
       id: branches
       uses: onliner/sanitize-branch-name@v1
     - name: Upload artifact to Github
-      uses: actions/upload-artifact@v6
+      uses: actions/upload-artifact@v7
       with:
         name: OdaTests-resources-${{ steps.branches.outputs.sanitized-branch-name }}.${{ github.run_number }}
         path: |
